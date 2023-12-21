@@ -2,9 +2,17 @@
   width: 100%;
   margin-top: 40px;
 
+  @media screen and (max-width: 800px) {
+    position: fixed;
+
+  z-index: 2;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
   .nav-container {
     width: 100%;
-    max-width: 30rem;
+    max-width: 40rem;
     margin: 0 auto;
     background: #031926;
     border-radius: 30px;
@@ -13,9 +21,12 @@
     .nav-content {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       gap: 20px;
+      @media screen and (max-width: 800px) {
+        gap: 10px;
+      }
       button {
         background: transparent;
         outline: none;
@@ -27,11 +38,14 @@
         border-radius: 30px;
         cursor: pointer;
         transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
-        font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;;
-
+        font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+          monospace;
         &:hover {
           background: linear-gradient(to right, #468189, #77aca242);
-          // transform: scale(1.05);
+        }
+        @media screen and (max-width: 800px) {
+          font-size: 14px;
+          padding: 15px 15px;
         }
       }
     }

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "./style.scss";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { experience } from "@/constants/experience";
 import Image from "next/image";
 import { AiFillBehanceCircle } from "react-icons/ai";
@@ -10,10 +10,10 @@ const Experience = () => {
   const timelineItems = experience.map((item, index) => ({
     title: (
       <div
+        className="work-duration"
         style={{
           display: "flex",
           flexDirection: "column",
-          fontSize: "64px",
           fontWeight: "700",
           alignItems: "flex-start",
         }}
