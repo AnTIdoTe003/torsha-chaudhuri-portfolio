@@ -41,7 +41,7 @@ const Experience = () => {
     icon: <AiFillBehanceCircle />,
   }));
   return (
-    <div className="experience-wrapper">
+    <div className="experience-wrapper" id="experience">
       <div className="experience-container">
         <div className="experience-content">
           <motion.div

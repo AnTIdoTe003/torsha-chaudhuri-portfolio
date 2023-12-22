@@ -12,7 +12,7 @@ import Image from 'next/image'
 import "./style.scss"
 const Skills = () => {
   return (
-    <div className="skills-wrapper">
+    <div className="skills-wrapper" id='skills'>
       <Container>
         <div className="skills-content">
           <Image src={Figma} alt='skills figma' />

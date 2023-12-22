@@ -51,8 +51,16 @@
     .project-slider {
       width: 100%;
       margin: 0 auto;
-      padding-left: 80px;
-
+      padding-left: 5rem;
+      // background: red;
+      display: flex;
+      justify-content: center;
+      @media screen and (max-width:800px) {
+        width: 100vw;
+        padding-left: 25vw;
+      }
+      .swiper-wrapper{
+      }
       .swiper-button-prev,
       .swiper-button-next {
         color: #f4e9cd;
@@ -62,6 +70,13 @@
         height: 60px;
         border-radius: 100%;
         box-shadow: 4px 4px 20px rgba(236, 236, 153, 0.288);
+        @media screen and (max-width:800px) {
+          width: 30px;
+          height: 30px;
+          &::after{
+            font-size: 12px;
+          }
+        }
       }
 
       .swiper-container {
@@ -78,7 +93,11 @@
         padding: 20px;
         border: 1px solid #ccc;
         border-radius: 10px;
-        margin: 0 10px; // Adjust the margin for spacing between cards
+        margin: 0 10px;
+        @media screen and (max-width:800px) {
+          width: 12rem;
+          height: 12rem;
+        }
 
         .project-card-img {
           width: 100%;

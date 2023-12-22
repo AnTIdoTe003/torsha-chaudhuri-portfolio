@@ -41,7 +41,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="projects-wrapper">
+    <div className="projects-wrapper" id="projects">
       <Container>
         <div className="projects-content">
           <div className="projects-header">
@@ -65,6 +65,7 @@ const Projects = () => {
             breakpoints={{
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
+
             }}
           >
             {projectData.map((ele, index) => {

@@ -6,8 +6,9 @@ import Image from "next/image";
 import "./style.scss";
 import Typewriter from "typewriter-effect";
 // icons import
-import Behance from "@/assets/icons/behance.svg"
-import Linkedin from '@/assets/icons/linkedin.svg'
+import Behance from "@/assets/icons/behance.svg";
+import Linkedin from "@/assets/icons/linkedin.svg";
+import Link from "next/link";
 const Hero = () => {
   const controls = useAnimation();
   useEffect(() => {
@@ -24,7 +25,7 @@ const Hero = () => {
   const typewriiterData = ["UI/UX Designer", "A multi disciplinary designer"];
   return (
     <>
-      <div className="home-wrapper">
+      <div className="home-wrapper" id="home">
         <div className="home-container">
           <motion.div
             initial={{ x: -300, opacity: 0 }}
@@ -81,6 +82,16 @@ const Hero = () => {
                   />
                 </motion.span>
               </motion.h3>
+              <Link href={"/resume.pdf"}>
+                <motion.button
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  className="home-resume-btn"
+                >
+                  Check out my resume
+                </motion.button>
+              </Link>
             </motion.div>
 
             {/* right side */}
