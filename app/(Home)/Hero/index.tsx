@@ -34,10 +34,10 @@ const Hero = () => {
             className="home-content"
           >
             {/* socials */}
-            <motion.div className={"home-socials"}>
+            {/* <motion.div className={"home-socials"}>
               <Image src={Behance} alt="torsha behance" />
               <Image src={Linkedin} alt="torsha linkedin" />
-            </motion.div>
+            </motion.div> */}
             {/* Home left */}
             <motion.div className="home-left">
               <motion.h1
