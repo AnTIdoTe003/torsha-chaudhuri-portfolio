@@ -5,6 +5,7 @@ import HomeBanner from "@/assets/images/home_banner.svg";
 import Image from "next/image";
 import "./style.scss";
 import Typewriter from "typewriter-effect";
+import Profile from "@/assets/images/profile.jpg"
 // icons import
 import Link from "next/link";
 import Head from "next/head";
@@ -25,7 +26,7 @@ const Hero = () => {
   return (
     <>
       <Head>
-        <meta property="og:type" content="website"/>
+        <meta property="og:type" content="website" />
         <meta
           name="og:description"
           content="Portfolio of Torsha Chaudhuri, a UI/UX Designer."
@@ -101,23 +102,13 @@ const Hero = () => {
             </motion.div>
 
             {/* right side */}
-            <motion.div
-              animate={{ y: 50 }}
-              transition={{
-                duration: 2,
-                delay: 1,
-                repeat: Infinity,
-                repeatType: "reverse",
-              }}
-              initial={{ y: 0 }}
-              className="home-right"
-            >
-              <Image
-                width={500}
-                height={500}
-                src={HomeBanner}
-                alt="Home Banner"
-              />
+            <motion.div className="home-right">
+                <Image
+                  width={400}
+                  height={400}
+                  src={Profile}
+                  alt="Profile Picture"
+                />
             </motion.div>
           </motion.div>
         </div>
