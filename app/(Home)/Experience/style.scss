@@ -31,11 +31,16 @@
         }
       }
       .experience-timeline {
-        .iXuAfH {
-         font-size: 64px;
-         @media screen and (max-width: 800px) {
-          font-size: 12px;
-         }
+        // .iXuAfH {
+        //  font-size: 64px;
+        //  @media screen and (max-width: 800px) {
+        //   font-size: 12px;
+        //  }
+        // }
+        .work-duration{
+          font-size: 64px;
+          @media screen and (max-width: 800px) {
+            font-size: 12px;}
         }
         .eDtWoL {
           padding: 20px;
