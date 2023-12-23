@@ -67,18 +67,4 @@ export const experience:ExperienceInterface = [
       "Photo-editing for multiple luxury fashion brands.",
     ],
   },
-  {
-    title: "Graphic Designer",
-    companyName: "Department of Tourism, Govt. of West Bengal",
-    icon: "",
-    iconBg: "",
-    date: {
-      joiningDate: "Dec'17",
-      leavingDate: "Jan'18",
-    },
-    points: [
-      "Countdown poster creations for Kolkata Christmas Festival on social media platforms.",
-      "Photography and videography projects.",
-    ],
-  },
 ];

@@ -12,18 +12,16 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-       @media screen and (max-width:800px) {
-      padding: 0 2.5rem;
-
-    }
+      @media screen and (max-width: 800px) {
+        padding: 0 2.5rem;
+      }
       p {
         &:nth-child(1) {
           font-size: 18px;
           opacity: 0.5;
-            @media screen and (max-width:800px) {
-          font-size: 14px;
-
-        }
+          @media screen and (max-width: 800px) {
+            font-size: 14px;
+          }
         }
         &:nth-child(3) {
           font-size: 18px;
@@ -31,20 +29,17 @@
           width: 700px;
           opacity: 0.5;
           font-family: Poppins;
-            @media screen and (max-width:800px) {
-          font-size: 14px;
-          width: 100%;
-
-
-        }
+          @media screen and (max-width: 800px) {
+            font-size: 14px;
+            width: 100%;
+          }
         }
       }
       h1 {
         font-size: 64px;
         font-weight: 700;
-        @media screen and (max-width:800px) {
+        @media screen and (max-width: 800px) {
           font-size: 32px;
-
         }
       }
     }
@@ -55,25 +50,25 @@
       // background: red;
       display: flex;
       justify-content: center;
-      @media screen and (max-width:800px) {
+      @media screen and (max-width: 800px) {
         width: 100vw;
         padding-left: 25vw;
       }
-      .swiper-wrapper{
+      .swiper-wrapper {
       }
       .swiper-button-prev,
       .swiper-button-next {
         color: #f4e9cd;
         font-weight: 600;
         background: #031926;
-        width:60px;
+        width: 60px;
         height: 60px;
         border-radius: 100%;
         box-shadow: 4px 4px 20px rgba(236, 236, 153, 0.288);
-        @media screen and (max-width:800px) {
+        @media screen and (max-width: 800px) {
           width: 30px;
           height: 30px;
-          &::after{
+          &::after {
             font-size: 12px;
           }
         }
@@ -88,21 +83,34 @@
       .project-card {
         background: #f4e9cd;
         width: 18rem;
-        height: 18rem;
+        height: 20rem;
         text-align: center;
-        padding: 20px;
         border: 1px solid #ccc;
         border-radius: 10px;
         margin: 0 10px;
-        @media screen and (max-width:800px) {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        @media screen and (max-width: 800px) {
           width: 12rem;
           height: 12rem;
         }
 
         .project-card-img {
           width: 100%;
-          height: 100%;
+          height: 90%;
           border-radius: 10px;
+          object-fit: cover;
+        }
+        p {
+          background: #031926;
+          color: #f4e9cd;
+          font-size: 14px;
+          font-size: 600;
+          width: max-content;
+          border-radius: 10px;
+          padding: 5px;
         }
       }
 

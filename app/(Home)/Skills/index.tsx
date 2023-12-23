@@ -8,6 +8,8 @@ import AdobePhotoshop from "@/assets/icons/photoshop.svg";
 import MicrosoftPowerPoint from "@/assets/icons/powerpoint.svg";
 import AdobeAfterEffects from "@/assets/icons/aftereffects.svg";
 import Maya from "@/assets/icons/maya.png";
+import VsCode from "@/assets/icons/vscode.svg"
+import MsPublisher from "@/assets/icons/mspublisher.svg"
 import Image from "next/image";
 import "./style.scss";
 import Head from "next/head";
@@ -30,22 +32,24 @@ const Skills = () => {
       <div className="skills-wrapper" id="skills">
         <Container>
           <div className="skills-content">
-            <Image src={Figma} alt="skills figma" />
-            <Image src={AdobeXd} alt="skills adobexd" />
+            <Image src={AdobePhotoshop} alt="skills adobe photoshop" />
             <Image src={AdobeIllustrator} alt="skills adobe illustrator" />
             <Image src={AdobeIndesign} alt="skills adobe indesign" />
-            <Image src={AdobePhotoshop} alt="skills adobe photoshop" />
             <Image
               src={MicrosoftPowerPoint}
               alt=" skills microsoft power point"
             />
             <Image src={AdobeAfterEffects} alt=" skills adobe after effects" />
+            <Image src ={MsPublisher} alt="skills ms publisher" />
+            <Image src={Figma} alt="skills figma" />
             <Image
               width={144}
               height={144}
               src={Maya}
               alt="skills autodesk maya"
             />
+            <Image src={AdobeXd} alt="skills adobexd" />
+            <Image src={VsCode} alt="skills vscode" />
           </div>
         </Container>
       </div>

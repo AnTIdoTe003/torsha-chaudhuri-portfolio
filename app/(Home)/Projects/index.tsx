@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import Container from "@/components/Container";
 import React from "react";
 import Project1 from "@/assets/images/project1.jpg";
@@ -7,6 +7,8 @@ import Project3 from "@/assets/images/project3.jpg";
 import Project4 from "@/assets/images/project4.jpg";
 import Project5 from "@/assets/images/project5.jpg";
 import Project6 from "@/assets/images/project6.jpg";
+import Project7 from "@/assets/images/project7.jpg";
+import Project8 from "@/assets/images/project8.jpg";
 import "./style.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -18,26 +20,42 @@ const Projects = () => {
     {
       title: "",
       image: Project1,
+      tag: "Digital Illustrations",
     },
     {
       title: "",
       image: Project2,
+      tag: "Social Media creatives",
     },
     {
       title: "",
       image: Project3,
+      tag: "Typography",
     },
     {
       title: "",
       image: Project4,
+      tag: "Animation",
     },
     {
       title: "",
       image: Project5,
+      tag: "Packaging design",
     },
     {
       title: "",
       image: Project6,
+      tag: "Logo design",
+    },
+    {
+      title: "",
+      image: Project7,
+      tag: "Print design",
+    },
+    {
+      title: "",
+      image: Project8,
+      tag: "UI/UX design",
     },
   ];
   return (
@@ -65,7 +83,6 @@ const Projects = () => {
             breakpoints={{
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
-
             }}
           >
             {projectData.map((ele, index) => {
@@ -77,7 +94,7 @@ const Projects = () => {
                       src={ele.image}
                       alt={"Torsha Chaudhuri Projects"}
                     />
-                    <p>{ele.title}</p>
+                    <p>{ele.tag}</p>
                   </div>
                 </SwiperSlide>
               );

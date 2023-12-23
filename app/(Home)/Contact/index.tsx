@@ -1,34 +1,37 @@
 import Container from "@/components/Container";
 import React from "react";
 import { MdEmail } from "react-icons/md";
-import { FaPhone, FaInstagram, FaSquareBehance } from "react-icons/fa6";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaPhone, FaSquareBehance, FaYoutube } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 import "./style.scss";
+import Link from "next/link";
+import { title } from "process";
 const Contact = () => {
   const contactDetails = [
     {
+      title: "Email",
       icon: <MdEmail />,
-      slug: "/",
+      slug: "mailto:torshachaudhuri2011@gmail.com",
     },
     {
+      title: "Phone",
       icon: <FaPhone />,
-      slug: "/",
+      slug: "tel:+916289670225",
     },
     {
-      icon: <FaFacebook />,
-      slug: "/",
+      title: "Youtube",
+      icon: <FaYoutube />,
+      slug: " https://www.youtube.com/channel/UCgvJjvK70z_I0bmOHdhNKAA",
     },
     {
-      icon: <FaInstagram />,
-      slug: "/",
-    },
-    {
+      title: "Linkedin",
       icon: <FaLinkedin />,
-      slug: "/",
+      slug: "https://www.linkedin.com/in/torsha-chaudhuri-75196b12b/",
     },
     {
+      title: "Behance",
       icon: <FaSquareBehance />,
-      slug: "/",
+      slug: "https://www.behance.net/torshachau6eeceed",
     },
   ];
   return (
@@ -44,7 +47,11 @@ const Contact = () => {
           </div>
           <div className="contact-details">
             {contactDetails.map((ele, index) => {
-              return <span key={index}>{ele.icon}</span>;
+              return (
+                <a href={`${ele.slug}`} key={index} aria-label={ele.title}>
+                  <span>{ele.icon}</span>
+                </a>
+              );
             })}
           </div>
         </div>
