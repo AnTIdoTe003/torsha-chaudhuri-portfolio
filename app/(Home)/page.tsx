@@ -4,20 +4,53 @@ import Experience from "./Experience";
 import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Head from "next/head";
 
 const Home = () => {
   return (
-    <div className="main-wrapper">
-      <div className="main-container">
-        <div className="main-content">
-          <Hero />
-          <Experience />
-          <Skills />
-          <Projects />
-          <Contact/>
+    <>
+      <Head>
+        <title>Torsha Chaudhuri - Portfolio</title>
+        <meta
+          name="description"
+          content="Torsha Chaudhuri's portfolio website showcasing her experience, skills, projects, and contact information."
+        />
+        <meta
+          name="keywords"
+          content="Torsha Chaudhuri, portfolio, web developer, full-stack developer"
+        />
+        <meta property="og:title" content="Torsha Chaudhuri - Portfolio" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://torsha-chaudhuri-portfolio.vercel.app/"
+        />{" "}
+        <meta
+          property="og:image"
+          content="https://media.licdn.com/dms/image/D5603AQGpj-oCYBfjxw/profile-displayphoto-shrink_800_800/0/1687751136547?e=1708560000&v=beta&t=Y3kjMnn9UOvNrbwd6RFnaX6U3ZzKR6YHqAb-83NXLGw"
+        />
+        {/* <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Torsha Chaudhuri",
+      "url": "https://www.torshachaudhuri.com"
+    }
+  </script> */}
+      </Head>
+
+      <div className="main-wrapper">
+        <div className="main-container">
+          <div className="main-content">
+            <Hero />
+            <Experience />
+            <Skills />
+            <Projects />
+            <Contact />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

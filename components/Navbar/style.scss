@@ -18,6 +18,10 @@
     border-radius: 30px;
     box-shadow: 4px 4px 20px rgba(236, 236, 153, 0.288);
     padding: 0 28px;
+    @media screen and (max-width:800px) {
+      padding: 0 14px;
+
+    }
     .nav-content {
       width: 100%;
       display: flex;
@@ -25,7 +29,7 @@
       align-items: center;
       gap: 20px;
       @media screen and (max-width: 800px) {
-        gap: 10px;
+        gap: 8px;
       }
       button {
         background: transparent;
@@ -44,8 +48,8 @@
           background: linear-gradient(to right, #468189, #77aca242);
         }
         @media screen and (max-width: 800px) {
-          font-size: 14px;
-          padding: 15px 15px;
+          font-size: 0.8rem;
+          padding: 15px 10px;
         }
       }
     }

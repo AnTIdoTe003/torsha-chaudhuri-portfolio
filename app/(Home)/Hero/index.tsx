@@ -6,9 +6,8 @@ import Image from "next/image";
 import "./style.scss";
 import Typewriter from "typewriter-effect";
 // icons import
-import Behance from "@/assets/icons/behance.svg";
-import Linkedin from "@/assets/icons/linkedin.svg";
 import Link from "next/link";
+import Head from "next/head";
 const Hero = () => {
   const controls = useAnimation();
   useEffect(() => {
@@ -25,6 +24,13 @@ const Hero = () => {
   const typewriiterData = ["UI/UX Designer", "A multi disciplinary designer"];
   return (
     <>
+      <Head>
+        <meta property="og:type" content="website"/>
+        <meta
+          name="og:description"
+          content="Portfolio of Torsha Chaudhuri, a UI/UX Designer."
+        />
+      </Head>
       <div className="home-wrapper" id="home">
         <div className="home-container">
           <motion.div

@@ -6,6 +6,7 @@ import { experience } from "@/constants/experience";
 import Image from "next/image";
 import { AiFillBehanceCircle } from "react-icons/ai";
 import { Chrono } from "react-chrono";
+import Head from "next/head";
 const Experience = () => {
   const timelineItems = experience.map((item, index) => ({
     title: (
@@ -16,9 +17,10 @@ const Experience = () => {
           flexDirection: "column",
           fontWeight: "700",
           alignItems: "flex-start",
+          justifyContent: "center",
         }}
       >
-        <p>{item?.date?.joiningDate}</p>
+        <p style={{transform:'translate-X(20px)'}}>{item?.date?.joiningDate}</p>
         <p>{item?.date?.leavingDate}</p>
       </div>
     ),
@@ -36,7 +38,11 @@ const Experience = () => {
       </div>
     ),
     cardDetailedText: item.points.map((ele, index) => {
-      return <li key={index}>{ele}</li>;
+      return (
+      <ul key={index}>
+        <li key={index}>{ele}</li>
+      </ul>
+      )
     }),
     cardSubtitle: <p>{item?.title}</p>,
     icon: (
@@ -46,6 +52,13 @@ const Experience = () => {
     ),
   }));
   return (
+    <>
+      <Head>
+
+        <title>Torsha Chaudhuri - Work Experience</title>
+        <meta name="description" content="Explore Torsha Chaudhuri's work experience and achievements." />
+
+      </Head>
     <div className="experience-wrapper" id="experience">
       <div className="experience-container">
         <div className="experience-content">
@@ -133,6 +146,7 @@ const Experience = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
