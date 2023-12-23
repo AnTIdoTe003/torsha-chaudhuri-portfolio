@@ -39,7 +39,11 @@ const Experience = () => {
       return <li key={index}>{ele}</li>;
     }),
     cardSubtitle: <p>{item?.title}</p>,
-    icon: <AiFillBehanceCircle />,
+    icon: (
+      <div className="company-icon">
+        <AiFillBehanceCircle />
+      </div>
+    ),
   }));
   return (
     <div className="experience-wrapper" id="experience">
