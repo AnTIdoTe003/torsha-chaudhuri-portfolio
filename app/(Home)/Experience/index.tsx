@@ -24,6 +24,7 @@ const Experience = () => {
     ),
     cardTitle: (
       <div
+        className="company-name"
         style={{
           color: "#F4E9CD",
           fontSize: "24px",
