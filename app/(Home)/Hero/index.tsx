@@ -22,7 +22,7 @@ const Hero = () => {
       },
     });
   }, [controls]);
-  const typewriiterData = ["UI/UX Designer", "A multi disciplinary designer"];
+  const typewriiterData = ["A Visual Designer", "A multi disciplinary designer"];
   return (
     <>
       <Head>

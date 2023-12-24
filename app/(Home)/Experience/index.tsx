@@ -7,6 +7,9 @@ import Image from "next/image";
 import { AiFillBehanceCircle } from "react-icons/ai";
 import { Chrono } from "react-chrono";
 import Head from "next/head";
+import Company1 from "@/assets/icons/affinityexpress-logo.png"
+import Company2 from "@/assets/icons/mohan impex.jpg"
+import Company3 from "@/assets/icons/shakambhari.png"
 const Experience = () => {
   const timelineItems = experience.map((item, index) => ({
     title: (
@@ -54,98 +57,81 @@ const Experience = () => {
   return (
     <>
       <Head>
-
         <title>Torsha Chaudhuri - Work Experience</title>
-        <meta name="description" content="Explore Torsha Chaudhuri's work experience and achievements." />
-
+        <meta
+          name="description"
+          content="Explore Torsha Chaudhuri's work experience and achievements."
+        />
       </Head>
-    <div className="experience-wrapper" id="experience">
-      <div className="experience-container">
-        <div className="experience-content">
-          <motion.div
-            className="experience-header"
-            variants={{
-              initial: {
-                y: -50,
-                opacity: 0,
-              },
-              animate: {
-                y: 0,
-                opacity: 1,
-                transition: {
-                  type: "spring",
-                  duration: 1.25,
-                  delay: 0,
+      <div className="experience-wrapper" id="experience">
+        <div className="experience-container">
+          <div className="experience-content">
+            <motion.div
+              className="experience-header"
+              variants={{
+                initial: {
+                  y: -50,
+                  opacity: 0,
                 },
-              },
-            }}
-          >
-            <h3>What I have done so far?</h3>
-            <h1>Work Experience</h1>
-          </motion.div>
-          <div className="experience-timeline">
-            <Chrono
-              items={timelineItems}
-              theme={{
-                primary: "#F4E9CD",
-                secondary: "#031926",
-                cardBgColor: "#468189",
-                cardForeColor: "violet",
-                titleColor: "#F4E9CD",
-                titleColorActive: "#F4E9CD",
+                animate: {
+                  y: 0,
+                  opacity: 1,
+                  transition: {
+                    type: "spring",
+                    duration: 1.25,
+                    delay: 0,
+                  },
+                },
               }}
-              mode="VERTICAL_ALTERNATING"
-              itemWidth={150}
             >
-              <div className="chrono-icons">
-                <Image
-                  src="https://img.icons8.com/ios-filled/100/000000/twitter.png"
-                  alt="twitter"
-                  width={50}
-                  height={50}
-                />
-                <Image
-                  src="https://img.icons8.com/ios-filled/100/000000/about.png"
-                  alt="twitter"
-                  width={20}
-                  height={20}
-                />
-                <Image
-                  src="https://img.icons8.com/ios-filled/100/000000/contacts.png"
-                  alt="twitter"
-                  width={20}
-                  height={20}
-                />
-                <Image
-                  src="https://img.icons8.com/ios-filled/100/000000/briefcase.png"
-                  alt="twitter"
-                  width={20}
-                  height={20}
-                />
-                <Image
-                  src="https://img.icons8.com/ios-filled/100/000000/idea.png"
-                  alt="twitter"
-                  width={20}
-                  height={20}
-                />
-                <Image
-                  src="https://img.icons8.com/ios-filled/100/000000/sun.png"
-                  alt="twitter"
-                  width={20}
-                  height={20}
-                />
-                <Image
-                  src="https://img.icons8.com/ios-filled/100/000000/info.png"
-                  alt="twitter"
-                  width={20}
-                  height={20}
-                />
-              </div>
-            </Chrono>
+              <h3>What I have done so far?</h3>
+              <h1>Work Experience</h1>
+            </motion.div>
+            <div className="experience-timeline">
+              <Chrono
+                items={timelineItems}
+                theme={{
+                  primary: "#F4E9CD",
+                  secondary: "#031926",
+                  cardBgColor: "#468189",
+                  cardForeColor: "violet",
+                  titleColor: "#F4E9CD",
+                  titleColorActive: "#F4E9CD",
+                }}
+                mode="VERTICAL_ALTERNATING"
+                itemWidth={150}
+              >
+                <div className="chrono-icons">
+                  <Image
+                    src={Company1}
+                    width={40}
+                    height={40}
+                    alt="Affinity X"
+                  />
+                  <Image
+                    src={Company2}
+                    alt="Mohan Impex Pvt. Ltd"
+                    width={40}
+                    height={40}
+                  />
+                  <Image
+                    src={Company3}
+                    alt="Shakambhari Ispat & Power Ltd"
+                    width={40}
+                    height={40}
+                  />
+                  <Image
+                    src={Company3}
+                    alt="Shakambhari Ispat & Power Ltd"
+                    width={40}
+                    height={40}
+                  />
+                </div>
+              </Chrono>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </>
   );
 };
