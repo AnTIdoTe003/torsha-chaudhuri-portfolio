@@ -86,7 +86,7 @@ const Projects = () => {
             navigation={true}
             modules={[Navigation]}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 2000 }}
+            autoplay={{ delay: 2 }}
             loop
             className="project-slider"
             breakpoints={{
