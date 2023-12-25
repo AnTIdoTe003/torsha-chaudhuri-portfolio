@@ -46,7 +46,7 @@
     .project-slider {
       width: 100%;
       margin: 0 auto;
-      padding-left: 5rem;
+      padding-left: 4rem;
       // background: red;
       display: flex;
       justify-content: center;
@@ -82,13 +82,13 @@
 
       .project-card {
         background: #f4e9cd;
-        width: 18rem;
+        width: 20rem;
         height: 20rem;
         text-align: center;
         border: 1px solid #ccc;
         border-radius: 10px;
         margin: 0 10px;
-        padding: 20px;
+        padding: 22px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -96,21 +96,27 @@
           width: 12rem;
           height: 12rem;
         }
-
         .project-card-img {
           width: 100%;
           height: 90%;
           border-radius: 10px;
           object-fit: cover;
         }
-        p {
-          background: #031926;
-          color: #f4e9cd;
-          font-size: 14px;
-          font-size: 600;
-          width: max-content;
-          border-radius: 10px;
-          padding: 5px;
+        .project-card-tags{
+          display: flex;
+          gap: 20px;
+          p {
+            background: #031926;
+            color: #f4e9cd;
+            font-size: 14px;
+            font-size: 600;
+            width: max-content;
+            border-radius: 10px;
+            padding: 5px;
+            &:nth-child(2){
+              cursor: pointer;
+            }
+          }
         }
       }
 

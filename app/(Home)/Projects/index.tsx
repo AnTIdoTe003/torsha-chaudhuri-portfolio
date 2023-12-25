@@ -15,27 +15,35 @@ import { Navigation } from "swiper/modules";
 import "swiper/scss/navigation";
 import "swiper/scss";
 import Image from "next/image";
+import { FaLink } from "react-icons/fa";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 const Projects = () => {
+  const router = useRouter()
   const projectData = [
     {
       title: "",
       image: Project1,
       tag: "Digital Illustrations",
+      link: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/52748049851771.60e87d52b7293.jpg",
     },
     {
       title: "",
       image: Project2,
       tag: "Social Media creatives",
+      link: "https://www.behance.net/gallery/134555829/Social-media-creatives",
     },
     {
       title: "",
       image: Project3,
       tag: "Typography",
+      link: "https://www.behance.net/gallery/187385735/Typography?tracking_source=project_owner_other_projects",
     },
     {
       title: "",
       image: Project4,
       tag: "Animation",
+      link: "https://www.behance.net/gallery/134853389/Showreel",
     },
     {
       title: "",
@@ -51,6 +59,7 @@ const Projects = () => {
       title: "",
       image: Project7,
       tag: "Print design",
+      link: "https://www.behance.net/gallery/123159091/UIUX-DESIGN",
     },
     {
       title: "",
@@ -94,7 +103,10 @@ const Projects = () => {
                       src={ele.image}
                       alt={"Torsha Chaudhuri Projects"}
                     />
-                    <p>{ele.tag}</p>
+                    <div className="project-card-tags">
+                      <p>{ele.tag}</p>
+                      <p onClick={()=>router.push(`${ele.link}`)}>View More</p>
+                    </div>
                   </div>
                 </SwiperSlide>
               );
