@@ -11,21 +11,24 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Torsha Chaudhuri - Portfolio</title>
+        <title>Torsha Chaudhuri - Graphic Designer Portfolio</title>
         <meta
           name="description"
-          content="Torsha Chaudhuri's portfolio website showcasing her experience, skills, projects, and contact information."
+          content="Explore Torsha Chaudhuri's graphic design portfolio showcasing her expertise in visual brand identity, presentation design, UI/UX, print design, video editing, and motion graphics."
         />
         <meta
           name="keywords"
-          content="Torsha Chaudhuri, portfolio, web developer, full-stack developer"
+          content="Torsha Chaudhuri, graphic designer, brand identity, presentation design, UI/UX, print design, video editing, motion graphics, portfolio"
         />
-        <meta property="og:title" content="Torsha Chaudhuri - Portfolio" />
+        <meta
+          property="og:title"
+          content="Torsha Chaudhuri - Graphic Designer Portfolio"
+        />
         <meta property="og:type" content="website" />
         <meta
           property="og:url"
           content="https://torsha-chaudhuri-portfolio.vercel.app/"
-        />{" "}
+        />
         <meta
           property="og:image"
           content="https://media.licdn.com/dms/image/D5603AQGpj-oCYBfjxw/profile-displayphoto-shrink_800_800/0/1687751136547?e=1708560000&v=beta&t=Y3kjMnn9UOvNrbwd6RFnaX6U3ZzKR6YHqAb-83NXLGw"
@@ -36,7 +39,7 @@ const Home = () => {
         <div className="main-container">
           <div className="main-content">
             <Hero />
-            <Introduction/>
+            <Introduction />
             <Experience />
             <Skills />
             <Projects />
