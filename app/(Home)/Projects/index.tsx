@@ -19,13 +19,13 @@ import { FaLink } from "react-icons/fa";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 const Projects = () => {
-  const router = useRouter()
+  const router = useRouter();
   const projectData = [
     {
       title: "",
       image: Project1,
       tag: "Digital Illustrations",
-      link: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/52748049851771.60e87d52b7293.jpg",
+      link: "https://www.behance.net/gallery/49851771/VECTOR-ILLUSTRATIONS",
     },
     {
       title: "",
@@ -37,7 +37,7 @@ const Projects = () => {
       title: "",
       image: Project3,
       tag: "Typography",
-      link: "https://www.behance.net/gallery/187385735/Typography?tracking_source=project_owner_other_projects",
+      link: "https://www.behance.net/gallery/187385735/Typography",
     },
     {
       title: "",
@@ -49,22 +49,25 @@ const Projects = () => {
       title: "",
       image: Project5,
       tag: "Packaging design",
+      link: "https://www.behance.net/gallery/123968771/Packaging-design",
     },
     {
       title: "",
       image: Project6,
       tag: "Logo design",
+      link: "https://www.behance.net/gallery/188109187/LOGO-DESIGN",
     },
     {
       title: "",
       image: Project7,
       tag: "Print design",
-      link: "https://www.behance.net/gallery/123159091/UIUX-DESIGN",
+      link: "https://www.behance.net/gallery/188109777/PRINT-DESIGN",
     },
     {
       title: "",
       image: Project8,
       tag: "UI/UX design",
+      link: "https://www.behance.net/gallery/123159091/UIUX-DESIGN",
     },
   ];
   return (
@@ -77,9 +80,9 @@ const Projects = () => {
             <p>
               Following projects showcases my skills and experience through
               real-world examples of my work. Each project is briefly described
-              with links to code repositories and live demos in it. It reflects
-              my ability to solve complex problems, work with different
-              technologies, and manage projects effectively.
+              with links to art works and designs in it. It reflects my ability
+              for creative problem solving, work with different technologies,
+              and manage projects effectively.
             </p>
           </div>
           <Swiper
@@ -105,7 +108,9 @@ const Projects = () => {
                     />
                     <div className="project-card-tags">
                       <p>{ele.tag}</p>
-                      <p onClick={()=>router.push(`${ele.link}`)}>View More</p>
+                      <p onClick={() => router.push(`${ele.link}`)}>
+                        View More
+                      </p>
                     </div>
                   </div>
                 </SwiperSlide>

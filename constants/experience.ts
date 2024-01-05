@@ -53,18 +53,4 @@ export const experience:ExperienceInterface = [
       "Ideation and redesign of in-house stationaries",
     ],
   },
-  {
-    title: "Graphic Design Intern",
-    companyName: "Shakambhari Ispat & Power Ltd.",
-    icon: "",
-    iconBg: "",
-    date: {
-      joiningDate: "Apr'21",
-      leavingDate: "Jun'21",
-    },
-    points: [
-      "Website traffic increment for a major eatery through social media creatives and motion graphic",
-      "Photo-editing for multiple luxury fashion brands.",
-    ],
-  },
 ];
