@@ -17,7 +17,7 @@ export const experience:ExperienceInterface = [
     iconBg: "",
     date: {
       joiningDate: "Sep'22",
-      leavingDate: "Present",
+      leavingDate: "Jan'24",
     },
     points: [
       "Delivering 100% best quality designs to high end USA based clients.",
