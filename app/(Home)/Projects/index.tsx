@@ -69,6 +69,12 @@ const Projects = () => {
       tag: "UI/UX design",
       link: "https://www.behance.net/gallery/123159091/UIUX-DESIGN",
     },
+    {
+      title: "",
+      image: "",
+      tag: "PowerPoint Presentation",
+      link: "https://www.behance.net/gallery/191014653/PowerPoint-Presentation-Design",
+    },
   ];
   return (
     <div className="projects-wrapper" id="projects">
